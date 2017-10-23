@@ -28,3 +28,23 @@ response time: 1
 response status: 200
 *************** response log end ***************
 
+[2017-10-23 20:14:05.764] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-23 20:14:11.041] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
