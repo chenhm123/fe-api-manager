@@ -1,0 +1,42 @@
+{{#equal isRoot ''}}
+<tr data-role-parent="{{parentKey}}">
+    <td colspan="5">
+        <div class="form-wrapper">
+{{/equal}}
+            <button class="btn btn-primary" type="button" data-toggle>添加数据类型</button>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>字段</th>
+                    <th>描述</th>
+                    <th>详情</th>
+                    <th>类型</th>
+                    <th>编辑数据</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each schema}}
+                <tr data-role-datakey="{{#if @root.parentKey}}{{@root.parentKey}}-{{/if}}{{dataKey}}">
+                    <td>{{dataKey}}</td>
+                    <td>{{describe}}</td>
+                    <td>{{details}}</td>
+                    <td>{{dataType}}</td>
+                    <td>
+                        {{#equal dataType 'object'}}
+                            <button class="btn btn-default" data-role-fold>展开数据结构</button>
+                        {{/equal}}
+                        {{#equal dataType 'array'}}
+                            <button class="btn btn-default" data-role-fold>展开数据结构</button>
+                        {{/equal}}
+                        <button class="btn btn-default" data-role-modify>编辑字段</button>
+                        <button class="btn btn-default" data-role-delete>删除字段</button>
+                    </td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+            {{#equal isRoot ''}}
+        </div>
+    </td>
+</tr>
+{{/equal}}

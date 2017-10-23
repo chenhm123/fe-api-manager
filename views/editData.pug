@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title='前端静态数据管理'
+        link(rel='stylesheet', href='/stylesheets/editData.css')
+        link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+        script(src='/vendor/jquery.min.js')
+        script(src='/vendor//bootstrap.min.js')
+        script(src='/vendor//handlebars.js')
+        script.
+            var tpdata = JSON.parse(!{JSON.stringify(data)})
+            var tpschema = JSON.parse(!{JSON.stringify(schema)})
+            var currentRule = "#{rule}"
+    body
+        header.container
+            h3 编辑数据:#{rule}
+        div.container
+            table.table.table-bordered#data-container
+                tbody
+        div(style="text-align:center;")
+            button(type="button" class="btn btn-default" data-role-save) 保存设置
+            a(class="btn btn-default" href="/") 取消
+        script(src='/javascripts/editData.js')

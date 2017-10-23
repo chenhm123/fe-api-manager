@@ -1,0 +1,6 @@
+_Store
+node_modules
+bower_modules
+npm-debug.log
+.idea
+webpack.config.js

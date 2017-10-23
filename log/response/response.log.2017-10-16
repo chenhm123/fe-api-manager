@@ -1,0 +1,180 @@
+[2017-10-16 09:11:03.564] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 1
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 11:19:32.222] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::ffff:192.168.21.131
+request query:  {"query":"api1"}
+response time: 1
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 11:21:11.831] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::ffff:192.168.22.131
+request query:  {"query":"api1"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 15:35:40.440] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 3
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 15:59:42.667] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 15:59:49.032] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 3
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 16:26:06.492] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 16:42:04.138] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 2
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 17:18:29.002] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 1
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 18:58:06.586] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 19:14:22.465] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 19:14:48.775] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 19:14:50.387] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 19:15:39.038] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 23:03:05.255] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 23:09:50.849] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 1
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 23:10:35.300] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-16 23:12:47.647] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 1
+response status: 200
+*************** response log end ***************
+

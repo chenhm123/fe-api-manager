@@ -1,0 +1,30 @@
+[2017-10-23 18:35:03.019] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 1
+response status: 200
+*************** response log end ***************
+
+[2017-10-23 18:35:07.736] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=api1
+request client ip:  ::1
+request query:  {"query":"api1"}
+response time: 0
+response status: 200
+*************** response log end ***************
+
+[2017-10-23 18:35:10.333] [INFO] responseLog - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /data?query=jobList
+request client ip:  ::1
+request query:  {"query":"jobList"}
+response time: 1
+response status: 200
+*************** response log end ***************
+

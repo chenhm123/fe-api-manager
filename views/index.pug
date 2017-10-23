@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        title='前端静态数据管理'
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+        script(src='/vendor/jquery.min.js')
+        script(src='/vendor//bootstrap.min.js')
+        script(src='/vendor//handlebars.js')
+    body
+        header.container
+            h1  前端静态数据管理
+        div.container
+            button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-rule-dialog") 添加规则
+            table.table#rules-list
+                thead
+                    tr
+                        th 编号
+                        th 跳转地址
+                        th 描述
+                        th 编辑项
+                tbody
+                    each item,idx in routes
+                        tr
+                            td #{idx+1}
+                            td #{item.rule}
+                            td #{item.desc}
+                            td
+                                a(class='btn btn-default' href='editSchema/'+item.rule) 定义数据结构
+                                a(class='btn btn-default' href='editData/'+item.rule) 编辑数据
+                                a(class='btn btn-default' href='data?query='+item.rule target='_blank') 查看接口
+                                a(class='btn btn-default' href='edit/'+item.rule) 发布
+
+            div(class="modal fade" id="add-rule-dialog" tabindex="-1" role="dialog" aria-labelledby="add-rule-title")
+                div(class="modal-dialog" role="document")
+                    div.modal-content
+                        div.modal-header
+                            button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                                span(aria-hidden="true") &times;
+                            h3(class="modal-title" id="add-rule-title") 输入规则
+                        div.modal-body
+                            div.form
+                                div.form-group
+                                    input(name='query' class='form-control' placeholder="输入规则地址,如(getProductsList)")
+                                    input(name='desc' class='form-control' placeholder="规则详情介绍")
+                        div.modal-footer
+                            button(type="button" class="btn btn-default" data-dismiss="modal") close
+                            button(type="button" class="btn btn-primary" id="add-rule") Save changes
+
+
+        script(src='/javascripts/index.js')

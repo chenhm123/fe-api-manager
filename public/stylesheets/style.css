@@ -1,0 +1,9 @@
+div.container > button{
+    margin:10px 0;
+}
+#rules-list td a{
+    margin-right:10px;
+}
+input.form-control{
+    margin-bottom:10px;
+}

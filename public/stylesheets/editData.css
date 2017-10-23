@@ -1,0 +1,20 @@
+#define-data-dialog select{
+    margin-top:10px;
+}
+
+div.container  button{
+    margin-bottom:10px;
+}
+
+#define-data-dialog input{
+    margin-top:10px;
+}
+div.container table button{
+    margin-right:10px;
+}
+.hide{
+    display:none;
+}
+body{
+    padding-bottom:100px;
+}

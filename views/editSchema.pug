@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        title='前端静态数据管理'
+        link(rel='stylesheet', href='/stylesheets/editSchema.css')
+        link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+        script(src='/vendor/jquery.min.js')
+        script(src='/vendor//bootstrap.min.js')
+        script(src='/vendor//handlebars.js')
+    body
+        header.container
+            h3 定义数据结构:#{rule}
+        div.container
+            button(type="button" class="btn btn-primary" data-toggle) 添加数据字段
+
+            table.table.table-bordered#data-schema
+                thead
+                    tr
+                        th 字段
+                        th 描述
+                        th 详情
+                        th 类型
+                        th 编辑数据
+                tbody
+                    each item in (JSON.parse(schema)).child
+                        tr(data-role-datakey=item.dataKey)
+                            td  #{item.dataKey}
+                            td  #{item.describe}
+                            td  #{item.details}
+                            td  #{item.dataType}
+                            td
+                                if item.dataType == 'array'
+                                    button.btn.btn-default(data-role-fold) 展开数据结构
+                                if item.dataType == 'object'
+                                    button.btn.btn-default(data-role-fold) 展开数据结构
+                                button.btn.btn-default(data-role-modify) 编辑字段
+                                button.btn.btn-default(data-role-delete) 删除字段
+        div(style="text-align:center;")
+            button(type="button" class="btn btn-default" data-role-save) 保存设置
+            a(class="btn btn-default" href="/") 取消
+
+        div(class="modal fade" id="define-data-dialog" tabindex="1" role="dialog" aria-labelledby="define-data-title")
+            div(class="modal-dialog" role="document")
+                div.modal-content
+                    div.modal-header
+                        button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") &times;
+                        h3(class="modal-title" id="define-data-title") 添加/修改数据类型
+                    div.modal-body.edit-main
+                        div.form
+                            div.form-group
+                                input(name='data-key' class='form-control' placeholder="字段名")
+                                input(name='data-describe' class='form-control' placeholder="描述")
+                                input(name='data-details' class='form-control' placeholder="详情")
+                                select.form-control
+                                    option(value='') 请选择类型
+                                    option(value='string') string
+                                    option(value='number') number
+                                    option(value='boolean') boolean
+                                    option(value='array') array
+                                    option(value='object') object
+                    div.modal-footer
+                        button(type="button" class="btn btn-default" data-dismiss="modal") close
+                        button(type="button" class="btn btn-primary" id="define-data") Save changes
+
+
+        script.
+            var tpdata = JSON.parse(!{JSON.stringify(data)})
+            var tpschema = JSON.parse(!{JSON.stringify(schema)})
+            var currentRule = "#{rule}"
+        script(src='/javascripts/editSchema.js')
